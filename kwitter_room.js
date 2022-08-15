@@ -1,4 +1,3 @@
-
 //ADD YOUR FIREBASE LINKS HERE
 var firebaseConfig = {
       apiKey: "AIzaSyB4yBGt_d2ifjIwVgcgBhlRwbCyBT_8w1w",
@@ -11,7 +10,7 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-firebaseConfig.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 function getData() {
       firebase.database().ref("/").on('value', function (snapshot) {
